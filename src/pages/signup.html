@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Sign up</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/styles/reset.css">
+    <link rel="stylesheet" href="/src/assets/styles/signup.css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="block">
+        <div class="img"></div>
+        <div class="form">
+          <h3 class="title">
+            Sign up
+          </h3>
+          <a href="login.html" class="link">
+            Existing member?
+          </a>
+          <form action="http://localhost:3000/api/users" method="post" id="signup-form">
+            <input type="email" class="email" placeholder="Email" id="signup-email" name="email"/>
+            <label for="email"></label>
+            <input type="password" class="password" placeholder="Password" id="signup-password" name="password"/>
+            <label for="password"></label>
+            <input type="text" class="name" placeholder="Name" id="signup-name" name="name">
+            <label for="name"></label>
+            <button type="submit" class="btn">Sign up</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script src="../index.js"></script>
+</html>

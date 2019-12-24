@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Log in</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/styles/reset.css">
+    <link rel="stylesheet" href="/src/assets/styles/login.css">
+  </head>
+  <body>
+    <div class="container">
+      <section class="block">
+        <div class="img"></div>
+        <div class="form">
+          <h3 class="title">
+            Log in
+          </h3>
+          <a href="signup.html" class="link">
+            Not a number?
+          </a>
+          <form action="http://localhost:3000/api/users/login" method="post" id="login-form">
+            <input type="email" class="email" placeholder="Email" id="login-email" name="email"/>
+            <label for="email"></label>
+            <input type="password" class="password" placeholder="Password" id="login-password" name="password"/>
+            <label for="password"></label>
+            <button type="submit" class="btn">Log in</button>
+          </form>
+          <a href="#" class="link link__forgot-pas">
+            Forgot password?
+          </a>
+        </div>
+      </section>
+      <script src="../index.js"></script>
+    </div>
+  </body>
+</html>

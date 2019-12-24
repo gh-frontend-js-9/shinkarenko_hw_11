@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Reset Password</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/styles/reset.css">
+    <link rel="stylesheet" href="/src/assets/styles/reset_pass.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="block">
+        <div class="img"></div>
+        <div class="form">
+          <h3 class="title">
+            Reset Password
+          </h3>
+          <a href="signup.html" class="link">
+            Not a memeber?
+          </a>
+          <form action="http://localhost:3000/api/users/reset_password" method="post" id="reset-form">
+            <input type="email" class="email" placeholder="Email" id="reset-email" name="email"/>
+            <label for="email"></label>
+            <input type="password" class="password" placeholder="Password" id="reset-password" name="password"/>
+            <label for="password"></label>
+            <input type="password" class="password" placeholder="Confirm password" id="confirm-password" name="confirm-password">
+            <label for="confirm-password"></label>
+            <button type="submit" class="btn">Sign up</button>
+          </form>
+        </div>
+      </section>
+      <script src="../index.js"></script>
+    </div>
+  </body>
+</html>

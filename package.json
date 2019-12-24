@@ -1,0 +1,19 @@
+{
+  "name": "first_webpack",
+  "version": "1.0.0",
+  "description": "geekhub project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "bulid": "webpack --mode production"
+  },
+  "keywords": [
+    "js"
+  ],
+  "author": "Dimon Shinkarenko",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  }
+}
