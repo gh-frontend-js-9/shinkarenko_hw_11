@@ -20,10 +20,11 @@
           <a href="signup.html" class="link">
             Not a number?
           </a>
-          <form action="http://localhost:3000/api/users/login" method="post" id="login-form">
+          <form action="http://localhost:3000/api/users/login" method="POST" id="login-form">
             <input type="email" class="email" placeholder="Email" id="login-email" name="email"/>
             <label for="email"></label>
             <input type="password" class="password" placeholder="Password" id="login-password" name="password"/>
+            <p id="password-erorr" class="pasword-erorr"></p>
             <label for="password"></label>
             <button type="submit" class="btn">Log in</button>
           </form>

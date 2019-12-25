@@ -23,10 +23,16 @@
           <form action="http://localhost:3000/api/users" method="post" id="signup-form">
             <input type="email" class="email" placeholder="Email" id="signup-email" name="email"/>
             <label for="email"></label>
+            <p id="email-error" class="email-error"></p>
+
             <input type="password" class="password" placeholder="Password" id="signup-password" name="password"/>
             <label for="password"></label>
+            <p id="password-error" class="password-error"></p>
+
             <input type="text" class="name" placeholder="Name" id="signup-name" name="name">
             <label for="name"></label>
+            <p id="name-erorr" class="name-erorr"></p>
+
             <button type="submit" class="btn">Sign up</button>
           </form>
         </div>
